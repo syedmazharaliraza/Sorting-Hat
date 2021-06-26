@@ -193,11 +193,10 @@ html, body {
   
 
 /* responsiveness */
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .title span {
         font-size: 9em;
-        color: blue;
-    }
+        }
 
 }
 

@@ -1,9 +1,9 @@
 var sound = new Audio('sounds/music.mp3'); // Harry potter theme music
 
-var houses = ["Hufflepuff", "Gryffindor", "Slytherin", "Ravenclaw"];
+var houses = ["Hufflepuff", "Gryffindor", "Slytherin", "Ravenclaw"]; //array of all for houses
 var randomhouse = Math.floor(Math.random() * 4);
 
-var audio = new Audio('sounds/' + houses[randomhouse] + '.mp3'); // Sorting hat speech for random house
+var audio = new Audio('sounds/' + houses[randomhouse] + 'before.mp3'); // Sorting hat speech for random house
 
 document.querySelector(".house").addEventListener("click", housetext);
 function housetext() {
@@ -18,9 +18,11 @@ function housetext() {
 
 
     document.querySelector(".house").textContent = "Your house is...";
-
+    
     audio.onended = function () {    
+        var audioafter = new Audio('sounds/' + houses[randomhouse] + 'after.mp3');
+        audioafter.play();
         document.querySelector(".house").textContent = houses[randomhouse];
-    }; //Name of the house shows up once the sorting hat's speech is over
-
-};
+    }; //Name and voice of the alloted house shows up once the sorting hat's speech is over
+    
+}
