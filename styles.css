@@ -1,0 +1,201 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: url("images/cursor_.png"), auto;
+}
+
+.page1 {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/wP.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.title {
+    width: 90%;
+    text-align: center;
+    margin-top: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -70%);
+}
+
+.title span {
+    color: white;
+    font-size: 11em;
+    font-family: "Life Savers", cursive;
+    letter-spacing: 0.2em;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    position: relative;
+    transform: translateY(-100vh);
+    display: inline-block;
+    animation: fall 1s forwards;
+}
+
+/* falling letters animation */
+
+@keyframes fall {
+    100% {
+        transform: translateY(0vh);
+    }
+}
+
+.title span:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.title span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.title span:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+.title span:nth-child(5) {
+    animation-delay: 1.2s;
+}
+
+.title span:nth-child(6) {
+    animation-delay: 1.5s;
+}
+
+.title span:nth-child(7) {
+    animation-delay: 1.8s;
+}
+
+.title span:nth-child(8) {
+    animation-delay: 2.1s;
+}
+
+.title span:nth-child(9) {
+    animation-delay: 2.4s;
+}
+
+.title span:nth-child(10) {
+    animation-delay: 2.7s;
+}
+
+.title span:nth-child(11) {
+    animation-delay: 3s;
+}
+
+.sub-title {
+    color: white;
+    font-size: 2.5em;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin-top: 0;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+    animation: FadeIn 3s forwards;
+    animation-delay: 4s;
+    opacity: 0;
+}
+
+.sub-title a {
+    text-decoration: none;
+    color: inherit;
+    cursor: url("images/cursor_.png"), auto;
+}
+
+/* fading-in text animation */
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Sub-title's underline effect */
+
+.sub-title::after {
+    content: '';
+    width: 100%;
+    height: 0.175rem;
+    position: absolute;
+    background-color: white;
+    left: -1%;
+    bottom: 0;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+.sub-title:hover::after {
+    transform: scale(1, 1);
+}
+
+.page2 {
+    background-image: url("images/sorting hat.gif");
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.buttonBox{
+    margin: 0;
+    max-width: 200px;
+    min-width: 150px;
+    flex: 20%;
+
+  }
+  button{
+    height:80px;
+    background:rgba(255, 255, 255, .27);
+    text-transform:uppercase;
+    color:white;
+    font-weight:700;
+    letter-spacing:1px;
+    border:none;
+    font-size:15px;
+    outline:none;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2.5em;
+    position: absolute;
+    width: 30%;
+    left: 35%;
+    bottom: 5%;
+    cursor: url("images/cursor_.png"), auto;
+  }  
+  #eighth>button{
+    transition:all .5s ease-in-out;
+  }
+  
+  #eighth:hover button{
+    text-shadow:
+      0 0 10px rgba(255,255,255, 1),
+      0 0 50px rgba(255, 255, 255, .8),
+      0 0 75px rgba(255, 255, 255, .6),
+      0 0 76px rgba(255, 255, 255, .4),
+      0 0 77px rgba(255, 255, 255, .5),
+      0 0 78px rgba(255, 255, 255, .4),
+      0 0 79px rgba(255, 255, 255, .3),
+      0 0 80px rgba(255, 255, 255, .2),
+      0 0 85px rgba(255, 255, 255, .1);
+  }
+  
+
+/* responsiveness */
+@media only screen and (max-width: 500px) {
+    .title span {
+        font-size: 9em;
+        color: blue;
+    }
+
+}
+
