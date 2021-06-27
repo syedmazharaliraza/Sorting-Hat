@@ -39,4 +39,12 @@ function housetext() {
         }, 1000);
     };
 }
-
+/*
+const splash = document.querySelector('.splashscreen');
+Splash Screen
+document.addEventListener('DOMContentLoaded', (e) => {
+    setTimeout(() => {
+        splash.classList.add("invisible")
+    }, 1800)
+});
+*/
