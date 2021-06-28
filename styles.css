@@ -30,7 +30,7 @@ html, body {
     color: white;
     font-size: 10em;
     font-family: "Life Savers", cursive;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     position: relative;
     transform: translateY(-100vh);
